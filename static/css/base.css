@@ -1,0 +1,119 @@
+body {
+    
+    padding-top: 30px;
+}
+a {
+    color: #218be7;
+    background-color: transparent;
+}
+a:link {
+    text-decoration: none !important;
+}
+a:visited {
+    text-decoration: none !important;
+}
+.jumbotron-fluid{
+
+vertical-align: middle;  
+     padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;   
+    
+}
+div {
+display: block;}
+/* used in section before footer in section padding class*/
+.btn-orange-fill {
+    display: inline-block;
+    cursor: pointer;
+    padding: 14px 0px 10px 10px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    font-family: "proxima-nova","Avenir","Helvetica-Neue","Helvetica","Arial",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: #218be7;
+    color: #fff;
+    background-size: 200%;
+    background-position: 50%;
+    -webkit-transition: background-color,0.3s;
+    -moz-transition: background-color,0.3s;
+    transition: background-color,0.3s;
+}
+/* used in home page class*/
+.section-padding1 {
+    padding: 90px 0px 50px 0px;
+    padding-top: 90px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    background-color: #grey !important;
+    display:block; 
+    box-sizing: border-box;
+}
+/* used in section-padding1*/
+.shadow-box-fill {
+    padding: 15px 0px 32px 38px;
+    display: block;
+    background-color: ghostwhite;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    margin-bottom: 10px;
+    z-index: 99;
+    border: 1px solid #e7ebeb;
+}
+/* used in services brake row*/
+.background-gray {
+    background-color: #FAFBFC;
+}
+/*used in home page */
+.section-padding {
+    padding: 90px 0px 50px 0px;
+    padding-top: 90px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    background-color: #363946 !important;
+    display:block; 
+    box-sizing: border-box;
+}
+
+.section-padding2 {
+    padding: 90px 0px 50px 0px;
+    padding-top: 90px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    background-color: whitesmoke !important;
+    display:block; 
+    box-sizing: border-box;
+}
+.em-text {
+    color: red !important;
+}   
+
+
+.footer-style {
+     display: block;
+    position: relative;
+}
+.footer-style .wrapper {
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
