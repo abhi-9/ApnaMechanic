@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+
+
+
+{% block jumbotron %}
+<!-- home page jumbotron -->  
+<div class="jumbotron jumbotron-fluid" style="background-image: url(../static/img/mechanic2.JPG); height:500px">
+      <div class="container">
+       <div class="row">
+          <div class="col-xs-12"  style="float: left !important; width: 100%; position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;">  
+          
+          <div class="col-xs-12" style="text-align:center; color: white">
+              <h1>Apna <span class="em-text">Mechanic</span> </h1>
+                  <h3 class="sub-header-text" >Skip the repair shop</h3>
+                  <h1 class="g-header-text header-text" >OUR MECHANICS MAKE HOUSE CALLS</h1>
+                  <h5>Service at your home or office · 7 days a week · Fair and transparent pricing</h5>
+              </div>
+           </div>
+          </div>    
+          <div class="row">
+              <div class="col-lg-4 col-md-5 col-sm-6"  style="float: none !important; margin: 0px auto; position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;">
+                 
+                  <a class="btn-orange-fill" href="{% url 'book' %}" >GET AN INSTANT QUOTE</a>
+            
+          </div>    
+          </div>
+</div>
+</div>
+{% endblock %}
+
+
+<!-- home page content-->
+{% block content %}
+<!-- home page section1 -->
+
+<div class="section-padding1" id="service">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center text-space">
+<h2 class="g-header-text">Get over 500 car repair services at your home or office</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-6" style="text-align:center">
+    <div class="shadow-box-fill">
+           <ul>
+            <a href="#service">
+                <li>Change Oil and Filter</li>
+               </a>
+               <a href="#service">
+                   <li>Brake Pads Replacement</li>
+               </a>
+               <a href="#service">
+                   <li>Timing Belt Replacement</li>
+               </a>
+               <a href="#service">
+                   <li>Pre-purchase Car Inspection</li>
+               </a>
+               <a href="#service">
+                   <li>Starter Replacement</li>
+</a>
+               <a href="#service">
+<li>Battery Replacement</li>
+</a>
+</ul>
+</div>
+    </div>    
+<div class="col-lg-6 col-md-6">
+<div class="shadow-box-fill">
+<ul>
+<a href="#">
+<li>Alternator Replacement</li>
+</a>
+<a href="#">
+<li>Serpentine/Drive Belt Replacement</li>
+</a>
+<a href="#">
+<li>Spark Plugs Replacement</li>
+</a>
+<a href="#">
+<li>Water Pump Replacement</li>
+</a>
+<a href="#">
+<li>Fuel Pump Replacement</li>
+</a>
+<a href="#">
+<li>Radiator Replacement</li>
+</a>
+</ul>
+</div>
+</div>    
+    </div>    
+    
+</div>
+
+</div>
+
+<!-- cities section-->
+<div class="section-padding2">
+    <div class="container">
+        <div class="row">
+<div class="col-lg-12 text-center text-space">
+<h2 class="g-header-text">Cities we are available in</h2>
+</div>
+</div>
+<div class="row standard-list-seo js-masonry spacet-20">
+    <div class="col-md-3 col-xs-6">
+<ul>
+<li>
+<a href="{% url 'book' %}">Jaipur</a>
+</li>
+<li>
+<a href="{% url 'book' %}"> Delhi</a>
+</li>
+<li>
+<a href="{% url 'book' %}"> Mumbai</a>
+</li>
+<li>
+<a href="{% url 'book' %}"> Gurgaon</a>
+</li>
+<li>
+<a href="{% url 'book' %}"> Noida</a>
+</li>
+<li>
+<a href="{% url 'book' %}"> Goa</a>
+</li>
+</ul>
+</div>
+<div class="col-md-3 col-xs-6">
+<ul>
+<li>
+<a href="{% url 'book' %}">Bengaluru</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Shimla</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Chennai</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Agra</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Manali</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Pune</a>
+</li>
+</ul>
+</div>
+<div class="col-md-3 col-xs-6">
+<ul>
+<li>
+<a href="{% url 'book' %}">Maysore</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Kota</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Udaipur</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Ahemdabad</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Guwahati</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Calcutta</a>
+</li>
+</ul>
+</div>
+<div class="col-md-3 col-xs-6">
+<ul>
+<li>
+<a href="{% url 'book' %}"> Kasol</a>
+</li>
+<li>
+<a href="{% url 'book' %}"> Srinagarh</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Chittor</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Chandighar</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Nanital</a>
+</li>
+<li>
+<a href="{% url 'book' %}">Nagpur</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+    </div>
+    </div>
+<!-- home page section2-->
+
+<div class="section-padding" id="info">
+    <div class="questions-section">
+        <div class="container">
+            <div class="row row-centered" style="text-align:centered">
+                <div class="col-md-12 col-centered text-center">
+<h2 class="g-header-text text-white">How can we help?</h2>
+<p class="text-white">Our service team is available 7 days a week, Monday - Friday from 6 AM to 5 PM PST, Saturday - Sunday 7 AM - 4 PM PST.</p>
+                    <p class="text-white question-contact-info"><a href="tel:+876999999"> 876999999 </a> · <a href="mailto:abhi9goal@gmail.com"> abhigoal@gmail.com</a></p></div>
+                <a href="mailto:hi@yourmechanic.com">
+</a>
+            </div>
+    <div class="row row-centered" style="margin-right: -15px; margin-left: -15px; text-align:centered">
+                <div class="col-lg-4 col-sm-4" style="margin: 0px auto; position: relative; min-height: 1px;
+    padding-right: 15px; padding-left: 15px;">
+                <a href="mailto:hi@yourmechanic.com"></a>
+                    <a class="btn-orange-fill" href="#info">Read FAQ</a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4"  style="margin: 0px auto; position: relative; min-height: 1px;
+    padding-right: 15px; padding-left: 15px;">
+                <a class="btn-orange-fill" href="{% url 'book' %}">GET A QUOTE</a>
+                </div>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}
+
+
+

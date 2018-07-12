@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% block navigation %}
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
+ <div class="container">
+    <a class="navbar-brand" style="color:white" href="{% url 'home' %}">
+   {% load static %}  <img src= "{% static "img/mechanic.jpg" %}"  class="rounded" style="width:40px;">ApnaMechanic </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="{% url 'request' %}">How It works </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'services' %}">Services <span class="sr-only">(current)</span> </a>
+      </li>
+        
+    {% if user.is_authenticated %}
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ user.username }}
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+              <a class="dropdown-item" href="#">My account</a>
+              <a class="dropdown-item" href="#">Change password</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'home' %}">Log out</a>
+            </div>
+          </li>
+        </ul>
+        {% else %}
+    <form class="form-inline my-2 my-lg-0 justify-content-end">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+         {% endif %}
+      </ul>
+     </div>
+     </div>
+</nav>
+
+
+
+{% endblock navigation %}
+
+{% block jumbotron %}
+ <!-- services- page  jubotron-->   
+<div class="jumbotron" style="background-image: url(../static/img/mechanic3.JPG); height: 300px">
+<div class="container">
+    <h1 style= "text-align:center; margin: auto"> Its <span class="em-text">Simple </span>and <span class="em-text">Friendly  </span> </h1>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- battery row -->      
+<div class="container"> 
+    <div class="row">
+<div class="col-lg-12">
+<h2 class="g-header-text">Battery</h2>
+</div>
+</div>  
+    <div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 general-list">
+<ul>
+<li>
+<a href="/services/auxiliary-battery-replacement">Auxiliary Battery Replacement</a>
+</li>
+<li>
+<a href="/services/battery-cable-replacement">Car Battery Cable Replacement</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 general-list">
+<ul>
+<li>
+<a href="/services/battery-replacement">Car Battery Replacement</a>
+</li>
+<li>
+<a href="/services/service-battery-cables">Service Battery/cables</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 general-list">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<!-- brakes row --> 
+<div class="background-gray section-small-padding">
+    <div class="container">
+        <div class="row">
+<div class="col-lg-12">
+<h2 class="g-header-text">Brakes</h2>
+</div>
+</div>
+        <div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 general-list">
+<ul>
+<li>
+<a href="/services/abs-speed-sensor-replacement">ABS Speed Sensor Replacement</a>
+</li>
+<li>
+<a href="/services/anti-lock-control-relay-replacement">Anti-Lock Control Relay Replacement</a>
+</li>
+<li>
+<a href="/services/anti-lock-fuses-or-relay-replacement">Anti-Lock Fuses Or Relay Replacement</a>
+</li>
+<li>
+<a href="/services/brake-caliper-replacement">Brake Caliper Replacement</a>
+</li>
+<li>
+<a href="/services/brake-drum-replacement">Brake Drum Replacement</a>
+</li>
+<li>
+<a href="/services/brake-hose-replacement">Brake Hose Replacement</a>
+</li>
+<li>
+<a href="/services/brake-master-cylinder-replacement">Brake Master Cylinder Replacement</a>
+</li>
+<li>
+<a href="/services/brake-pads-replacement">Brake Pad Replacement</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 general-list">
+<ul>
+<li>
+<a href="/services/brake-rotor-disc-replacement">Brake Rotors/Discs Replacement</a>
+</li>
+<li>
+<a href="/services/brake-shoes-rear-replacement">Brake Shoe Replacement (Rear)</a>
+</li>
+<li>
+<a href="/services/brake-system-flush">Brake System Flush</a>
+</li>
+<li>
+<a href="/services/brake-vacuum-pump-replacement">Brake Vacuum Pump Replacement</a>
+</li>
+<li>
+<a href="/services/brake-wheel-cylinder-replacement">Brake Wheel Cylinder Replacement</a>
+</li>
+<li>
+<a href="/services/emergency-parking-brake-cable-replacement">Emergency/Parking Brake Cable Replacement</a>
+</li>
+<li>
+<a href="/services/emergency-parking-brake-shoe-replacement">Emergency/Parking Brake Shoe Replacement</a>
+</li>
+<li>
+<a href="/services/emergency-brake-control-replacement">Emergency Brake Control Replacement</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 general-list">
+<ul>
+<li>
+<a href="/services/hydraulic-brake-booster-replacement">Hydraulic Brake Booster Replacement</a>
+</li>
+<li>
+<a href="/services/parking-brake-release-cable-replacement">Parking Brake Release Cable Replacement</a>
+</li>
+<li>
+<a href="/services/vacuum-brake-booster-check-valve-replacement">Vacuum Brake Booster Check Valve Replacement</a>
+</li>
+<li>
+<a href="/services/vacuum-pump-replacement">Vacuum Pump Repair</a>
+</li>
+<li>
+<a href="/services/wheel-hub-assembly-replacement">Wheel Hub Assembly Replacement</a>
+</li>
+<li>
+<a href="/services/wheel-speed-sensor-replacement">Wheel Speed Sensor Replacement</a>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+</div>
+
+
+
+<!-- section above footer-->
+ <div class="section-padding">
+    <div class="questions-section">
+        <div class="container">
+            <div class="row row-centered" style="text-align:centered">
+                <div class="col-md-12 col-centered text-center">
+<h2 class="g-header-text text-white">How can we help?</h2>
+<p class="text-white">Our service team is available 7 days a week, Monday - Friday from 6 AM to 5 PM PST, Saturday - Sunday 7 AM - 4 PM PST.</p>
+                    <p class="text-white question-contact-info"><a href="tel:+876999999"> 876999999 </a> · <a href="mailto:abhi9goal@gmail.com"> abhigoal@gmail.com</a></p></div>
+                <a href="mailto:hi@yourmechanic.com">
+</a>
+            </div>
+    <div class="row row-centered" style="margin-right: -15px; margin-left: -15px; text-align:centered">
+                <div class="col-lg-4 col-sm-4" style="margin: 0px auto; position: relative; min-height: 1px;
+    padding-right: 15px; padding-left: 15px;">
+                <a href="mailto:hi@yourmechanic.com"></a>
+                    <a class="btn-orange-fill" href="#">Read FAQ</a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4"  style="margin: 0px auto; position: relative; min-height: 1px;
+    padding-right: 15px; padding-left: 15px;">
+                <a class="btn-orange-fill" href="{% url 'book' %}">GET A QUOTE</a>
+                </div>
+</div>
+</div>
+</div>
+</div>
+
+
+{% endblock content %}

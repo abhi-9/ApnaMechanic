@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block howitworks %}
+<li class="nav-item active">
+        <a class="nav-link" href="{% url 'request' %}">How It works <span class="sr-only">(current)</span> </a>
+</li>
+{% endblock howitworks %}
+
+
+
+
+<!-- how it works jumbotron-->
+{% block jumbotron %}
+    
+<div class="jumbotron" style="background-image: url(../static/img/mechanic1.JPG); height: 200px">
+<div class="container">
+    <h1 style= "text-align:center; margin: auto"> Its <span class="em-text">Simple </span>and <span class="em-text">Friendly  </span> </h1>
+</div>
+</div>
+{% endblock %}
+
+    
+    
+{% block content %}    
+<!-- how it works list group-->
+
+<!--
+<a class="nav-link nav-item active" href="#">Active</a>
+     <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  <a class="nav-link nav-item" href="#">Link</a>
+  <a class="nav-link nav-item" href="#">Link</a>
+  <a class="nav-link nav-item disabled" href="#">Disabled</a>
+-->
+
+<div class="container">
+<div class="row">
+     <div class="col-md-4s">
+      <div class="list-group">
+    
+          <a class="list-group-item list-group-item-action active" data-toggle="collapse" href="#request-a-service-online" role="button" aria-expanded="false" aria-controls="request-a-service-online">
+   Request a service online
+            </a>
+    
+
+           <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#we_come_to_you" role="button" aria-expanded="false" aria-controls="we_come_to_you">
+    We come to you
+          </a>
+    
+    
+          <a class="list-group-item list-group-item-action" data-toggle="collapse"  href="#we_warranty_our_services" role="button" aria-expanded="false" aria-controls="we_warranty_our_services">
+   We warranty our services
+          </a>
+   
+          <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#get_maintenance_reminders" role="button" aria-expanded="false" aria-controls="get_maintenance_reminders">
+   Get maintenance reminders
+          </a>
+    
+         </div>
+     </div>
+        <div class="col-md-8">
+            
+ {% block how_do_we_work %}
+            
+                    <div class="collapse-show" id="request-a-service-online">
+                        <div row style="text-align:center; color: green"> <strong>Request a service online</strong></div>
+                            <p> Car trouble? We can help
+Book a service online and our mechanics will come to your home or office to service your car. We make the entire process easy for you. Using our website and mobile apps, you can access the maintenance schedule of all your cars, get a fair and transparent price, book an appointment, make payments, access service history and get maintenance reminders. And since we don’t have the overhead cost of a shop, we are able to charge less while providing a convenient service..</p>
+                    </div>  
+             
+            <div class="collapse-show" id="get_maintenance_reminders">
+                <hr>
+                <div row style="text-align:center; color: green"> <strong>Get Maintenance Reminders</strong></div>
+                 
+                            <p> Regular maintenance made easy
+Stay on schedule, your way. Get maintenance reminders via email, text or our mobile app. We’ll send you reminders when it’s time to do your next oil or your scheduled service.
+
+QUICK EASY BOOKING
+From reminders to booking, it takes less than 30 seconds. Simply open the link in the reminder, select a time and book your next maintenance. A highly rated mechanic will come to you to perform the service. Taking care of your car has never been easier. And as they say, prevention is better than care.</p>
+                    </div> 
+            
+            <div class="collapse-show" id="we_come_to_you">
+                <hr>
+               <div row style="text-align:center; color: green"> <strong>We Come To You</strong></div>
+                            <p> Your peace of mind is guaranteed
+    Finding the right mechanic and inviting him or her to your home or workplace can be tough. That's why we work hard to make sure that getting your car repaired on-site is easy, professional, and safe</p>
+                    </div>  
+            
+            <div class="collapse-show" id="we_warranty_our_services">
+                <hr>
+                <div row style="text-align:center; color: green"> <strong>We Warranty Our Services</strong></div>
+                            <p> Car trouble? We can help
+Book a service online and our mechanics will come to your home or office to service your car. We make the entire process easy for you. Using our website and mobile apps, you can access the maintenance schedule of all your cars, get a fair and transparent price, book an appointment, make payments, access service history and get maintenance reminders. And since we don’t have the overhead cost of a shop, we are able to charge less while providing a convenient service..</p>
+                    </div>  
+            
+            
+            
+            
+        
+{% endblock how_do_we_work %}        
+        
+</div> 
+</div>
+</div>
+
+{% endblock content %}
+    
+
+
+
+  
